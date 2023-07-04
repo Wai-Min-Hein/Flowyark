@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Lato:wght@300;400;700&family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #0d1117;
+  color: #a7b5c4;
+}
+
+
+::-webkit-scrollbar {
+	width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+	background-color: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+	background-color: #0052CC;
+	border-radius: 3px;
+  }
+  
+
+
+
+
+.btn {
+  position: relative;
+  overflow: hidden;
+  
+}
+.btn:hover.btn::before {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(12);
+}
+.btn::before {
+  content: "";
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: hsla(240, 1%, 26%, 0.4);
+  bottom: -12rem;
+  left: 50%;
+  transform: translate(-50%);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.8s;
+}
+
+.btn:hover .btn1 {
+  transform: translateY(-3rem);
+  opacity: 0;
+  visibility: hidden;
+}
+.btn1 {
+  transition: all 0.5s;
+}
+.btn:hover .btn2 {
+  transform: translateY(0rem);
+  opacity: 1;
+  visibility: visible;
+}
+.btn2 {
+  position: absolute;
+  transition: all 0.5s;
+  transform: translateY(3rem);
+  display: inline-block;
+  opacity: 0;
+  visibility: hidden;
+  
+  
+}
+
+.help-icon{
+    box-shadow: 0 10px 24px -8px #7f89ec,
+    inset 0 0px 5px #5b64b3;
+}
+
+
+.acc-btn{
+    position: relative;
+    width: 20px;
+    height: 1.5px;
+    background-color: white;
+
+}
+.acc-btn::after{
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 1.5px;
+    background-color: white;
+    top: 0;
+    transform: rotate(90deg);
+    left: 0;
+}
+.btnActive{
+    width: 20px;
+    height: 1.5px;
+    background-color: white;
+}
+
+
+.acc-btn1{
+    position: relative;
+    width: 20px;
+    height: 1.5px;
+    background-color: white;
+
+}
+.acc-btn1::after{
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 1.5px;
+    background-color: white;
+    top: 0;
+    transform: rotate(90deg);
+    left: 0;
+}
+.btnActive1{
+    width: 20px;
+    height: 1.5px;
+    background-color: white;
+}
+
+.g-border{
+  
+  border-bottom-left-radius: 3rem;
+  border-left: 2px;
+  border-bottom: 2px;
+  border-style: solid;
+}
+
+.accor{
+  position: relative;
+}
+.accor::after{
+  position: absolute;
+  content: '';
+  background-color: white;
+  height: 1px;
+  width: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.btn-ani{
+  transform: rotate(-180deg);
+  transition: all .5s ease-in;
+}
+.btn-ani-anti{
+  transform: rotate(180deg) !important;
+  transition: all .5s ease-in;
+}
+
+
+/* npx tailwindcss -i ./src/App.css -o ./Css/output.css --watch */

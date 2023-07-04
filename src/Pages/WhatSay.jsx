@@ -1,7 +1,7 @@
 import React from "react";
 import helpIcon from "../../img/helpIcon.png";
 
-import whatSay from "../../img/WhatSay.jpeg";
+import whatSay from "../../img/whatSay.jpeg";
 
 const WhatSay = () => {
   return (

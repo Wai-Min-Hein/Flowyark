@@ -37,8 +37,8 @@ const Popular = () => {
 
   return (
     <motion.div className="relative sect z-40">
-      <div className=" bg-popular absolute w-full h-[72rem] z-[-100]  "></div>
-      <div className="container mx-auto pt-24  z-40">
+      <div className=" bg-popular absolute  w-full xl:w-full h-[72rem] z-[-100]  "></div>
+      <div className="xl:container xl:mx-auto pt-24  z-40">
         <div className="text-center">
           <p className="text-[11px] tracking-wide font-[600] uppercase">
             <span className=" opacity-50 pr-1">07 </span> .NOT READY YET?
@@ -50,24 +50,24 @@ const Popular = () => {
 
         <div
           ref={ref}
-          className="cards flex items-stretch justify-between gap-10 w-[90%] mx-auto mt-[10rem] z-50"
+          className="cards flex items-stretch flex-col md:flex-row justify-between gap-10 w-[90%] mx-auto mt-[10rem] z-50"
         >
           <div className="card bg-acc-bg basis-1/3 rounded-md relative  ">
             <motion.span
               style={{ translateY, translateX }}
-              className="absolute z-[-1] w-full h-full bg-[rgba(20,161,255,0.6)] opacity-60 top-0 left-0 rounded-md "
+              className="absolute hidden md:inline-block z-[-1] w-full h-full bg-[rgba(20,161,255,0.6)] opacity-60 top-0 left-0 rounded-md "
             ></motion.span>
             <motion.span
               style={{ translateY: translateY2, translateX: translateX2 }}
-              className="absolute z-[-2] w-full h-full bg-[rgba(20,161,255,0.5)] opacity-50 top-0 left-0 rounded-md "
+              className="absolute hidden md:inline-block z-[-2] w-full h-full bg-[rgba(20,161,255,0.5)] opacity-50 top-0 left-0 rounded-md "
             ></motion.span>
             <motion.span
               style={{ translateY: translateY3, translateX: translateX3 }}
-              className="absolute z-[-3] w-full h-full bg-[rgba(20,161,255,0.4)] opacity-40 top-0 left-0 rounded-md "
+              className="absolute hidden md:inline-block z-[-3] w-full h-full bg-[rgba(20,161,255,0.4)] opacity-40 top-0 left-0 rounded-md "
             ></motion.span>
             <motion.span
               style={{ translateY: translateY4, translateX: translateX4 }}
-              className="absolute z-[-4] w-full h-full bg-[rgba(20,161,255,0.3)] opacity-30 top-0 left-0 rounded-md "
+              className="absolute hidden md:inline-block z-[-4] w-full h-full bg-[rgba(20,161,255,0.3)] opacity-30 top-0 left-0 rounded-md "
             ></motion.span>
 
             <div className="image">
@@ -88,19 +88,19 @@ const Popular = () => {
             
                <motion.span
                   style={{ translateY, scaleX }}
-                  className="absolute z-[-1] w-full h-full bg-[rgba(20,161,255,0.6)]  opacity-60 top-0 left-0 rounded-md"
+                  className="absolute hidden md:inline-block z-[-1] w-full h-full bg-[rgba(20,161,255,0.6)]  opacity-60 top-0 left-0 rounded-md"
                 ></motion.span>
                 <motion.span
                   style={{ translateY: translateY2, scaleX: scaleX2 }}
-                  className="absolute z-[-2] w-full h-full bg-[rgba(20,161,255,0.5)] opacity-50 top-0 left-0 rounded-md"
+                  className="absolute hidden md:inline-block z-[-2] w-full h-full bg-[rgba(20,161,255,0.5)] opacity-50 top-0 left-0 rounded-md"
                 ></motion.span>
                 <motion.span
                   style={{ translateY: translateY3, scaleX: scaleX3 }}
-                  className="absolute z-[-3] w-full h-full bg-[rgba(20,161,255,0.4)]  opacity-40 top-0 left-0 rounded-md"
+                  className="absolute hidden md:inline-block z-[-3] w-full h-full bg-[rgba(20,161,255,0.4)]  opacity-40 top-0 left-0 rounded-md"
                 ></motion.span>
                 <motion.span
                   style={{ translateY: translateY4, scaleX: scaleX4 }}
-                  className="absolute z-[-4] w-full h-full bg-[rgba(20,161,255,0.3)] opacity-30 top-0 left-0 rounded-md"
+                  className="absolute hidden md:inline-block z-[-4] w-full h-full bg-[rgba(20,161,255,0.3)] opacity-30 top-0 left-0 rounded-md"
                 ></motion.span>
               
               <div className="image">
@@ -120,19 +120,19 @@ const Popular = () => {
           <div className="card bg-acc-bg basis-1/3 rounded-md  relative">
             <motion.span
               style={{ translateY, translateX: translateX11 }}
-              className="absolute z-[-1] w-full h-full bg-[rgba(20,161,255,0.6)] opacity-60 top-0 left-0 rounded-md "
+              className="absolute hidden md:inline-block z-[-1] w-full h-full bg-[rgba(20,161,255,0.6)] opacity-60 top-0 left-0 rounded-md "
             ></motion.span>
             <motion.span
               style={{ translateY: translateY2, translateX: translateX12 }}
-              className="absolute z-[-2] w-full h-full bg-[rgba(20,161,255,0.5)] opacity-50 top-0 left-0 rounded-md "
+              className="absolute hidden md:inline-block z-[-2] w-full h-full bg-[rgba(20,161,255,0.5)] opacity-50 top-0 left-0 rounded-md "
             ></motion.span>
             <motion.span
               style={{ translateY: translateY3, translateX: translateX13 }}
-              className="absolute z-[-3] w-full h-full bg-[rgba(20,161,255,0.4)] opacity-40  top-0 left-0 rounded-md "
+              className="absolute hidden md:inline-block z-[-3] w-full h-full bg-[rgba(20,161,255,0.4)] opacity-40  top-0 left-0 rounded-md "
             ></motion.span>
             <motion.span
               style={{ translateY: translateY4, translateX: translateX14 }}
-              className="absolute z-[-4] w-full h-full bg-[rgba(20,161,255,0.3)] opacity-30 top-0 left-0 rounded-md "
+              className="absolute hidden md:inline-block z-[-4] w-full h-full bg-[rgba(20,161,255,0.3)] opacity-30 top-0 left-0 rounded-md "
             ></motion.span>
             <div className="image">
                 <img src={popular3} className="w-full block rounded-t-md" alt="" />

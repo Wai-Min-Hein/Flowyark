@@ -8,12 +8,12 @@ const Pricing = () => {
 
   
   return (
-    <div className="container mx-auto !bg-transparent z-[60]">
+    <div className="xl:container xl:mx-auto !bg-transparent z-[60]">
       <div className="text-center">
         <p className="text-[11px] tracking-wide font-[600] uppercase">
           <span className=" opacity-50 pr-1">06 </span> .Our Pricing
         </p>
-        <h1 className="font-head text-[3.75rem] font-[700] tracking-tight w-1/2 leading-[3.75rem] mx-auto mt-10 mb-16">
+        <h1 className="font-head text-[3.75rem] font-[700] tracking-tight w-full md:w-2/3 xl:w-1/2 leading-[3.75rem] mx-auto mt-10 mb-16">
           Ready to launch your new{" "}
           <span className="bg-blue-gradient bg-clip-text text-transparent">
             website?
@@ -21,8 +21,8 @@ const Pricing = () => {
         </h1>
       </div>
 
-      <div className="cards flex items-stretch justify-between gap-5 w-[80%] mx-auto">
-        <div className="card bg-acc-bg basis-1/3 rounded-md px-6 py-4 relative">
+      <div className="cards flex items-stretch justify-between gap-1 w-[90%] lg:w-[80%] mx-auto flex-wrap lg:flex-nowrap">
+        <div className="card bg-acc-bg basis-full lg:basis-1/3 rounded-md px-6 py-4 relative">
 
           <div className="header">
           <div className="relative flex">
@@ -74,7 +74,7 @@ const Pricing = () => {
             </button>
           </div>
         </div>
-        <div className="card bg-acc-bg basis-1/3 rounded-md px-6 py-4">
+        <div className="card bg-acc-bg basis-full lg:basis-1/3 rounded-md px-6 py-4">
           <div className="header">
           <div className="relative flex">
               <span className="text-sm  opacity-50">02</span>
@@ -125,7 +125,7 @@ const Pricing = () => {
             </button>
           </div>
         </div>
-        <div className="card bg-acc-bg basis-1/3 rounded-md px-6 py-4">
+        <div className="card bg-acc-bg basis-full lg:basis-1/3 rounded-md px-6 py-4">
           <div className="header">
             <div className="relative flex">
               <span className="text-sm  opacity-50">03</span>

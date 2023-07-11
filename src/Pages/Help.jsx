@@ -4,6 +4,8 @@ import helpIcon from "../../img/helpIcon.png";
 import { MdOutlinePhonelink } from "react-icons/md";
 import { FaHandHoldingHeart } from "react-icons/fa";
 import { MdOutlinePhoneIphone } from "react-icons/md";
+import { BiChevronRight } from "react-icons/bi";
+import { BiChevronDown } from "react-icons/bi";
 
 // import {AiOutlinePlus} from 'react-icons/ai'
 import { AiOutlineMinus } from "react-icons/ai";
@@ -42,26 +44,26 @@ const Help = () => {
     (accActive3 && "bg-help3");
 
   return (
-    <section className="mx-auto container mt-[10rem] pb-[5rem]">
-      <div className="px-[9rem] mb-10">
+    <section className="xl:mx-auto xl:container mt-[10rem] pb-[5rem]">
+      <div className="px-[1rem] xl:px-[9rem] mb-10">
         <p className="text-[11px] tracking-wide font-[600] uppercase">
           <span className=" opacity-50 pr-1">01 </span> .How we help
         </p>
-        <div className="mt-[2rem] flex gap-7 justify-start items-start">
+        <div className="mt-[2rem] flex flex-col sm:flex-row gap-7 justify-start items-start">
           <div className="">
             <div className="mt-0 bg-blue w-[3.5rem] h-[3.5rem] rounded-full grid place-items-center border-[3px] border-[#7f89ec] help-icon">
               <img src={helpIcon} className="w-[1.75rem]" alt="" />
             </div>
           </div>
           <div className="">
-            <h1 className="font-head text-[3.25rem] font-[700] tracking-tight w-[45rem] leading-[3.75rem]">
+            <h1 className="font-head text-[1.8rem] sm:text-[2.5rem] xl:text-[3.25rem] font-[700] tracking-tight  sm:w-4/5 xl:w-full leading-[2.75rem] xl:leading-[3.75rem] ">
               We{" "}
               <span className="bg-blue-gradient bg-clip-text text-transparent">
                 take on the stress
               </span>{" "}
               of designing, building, and managing your website
             </h1>
-            <p className="font-para mt-3 w-[35rem] text-[1.35rem]">
+            <p className="font-para mt-3 w-[22rem] sm:w-[26rem] md:w-[30rem] xl:w-[35rem] text-[1.2rem] xl:text-[1.35rem]">
               So you can spend more time building your product and working on
               your main business goals.
             </p>
@@ -69,8 +71,8 @@ const Help = () => {
         </div>
       </div>
 
-      <div className="flex gap-24 mt-[6rem] justify-center">
-        <div className=" basis-[30%]">
+      <div className="flex gap-24 mt-[6rem] px-[1rem] lg:px-0 justify-center flex-wrap lg:flex-nowrap">
+        <div className="basis-full lg:basis-[40%] xl:basis-[30%]">
           <div className="bg-acc-bg rounded-md px-6 py-9">
             <div
               className="flex justify-between items-start cursor-pointer"
@@ -98,7 +100,7 @@ const Help = () => {
                         transition={{ duration: 0.4 }}
                         
                       >
-                        <p className="mt-3 text-md font-[500] pr-5">
+                        <p className="mt-3 text-md font-[500] pr-0 xl:pr-5">
                           We are certified Webflow template developers with over
                           4,000 happy customers.
                         </p>
@@ -107,9 +109,9 @@ const Help = () => {
                   </AnimatePresence>
                 </div>
               </div>
-              <div className={`w-1/2 h-[1px] rotate-[90deg] bg-white basis-[5%] relative after:content-[''] after:absolute after:w-full after:h-[1px] after:bg-white after:rotate-[90deg] ${accActive? 'btn-ani after:opacity-0 after:rotate-[-180deg] after:duration-300': 'btn-ani-anti'}`}>
-                {/* {accActive ? <AiOutlineMinus /> : <AiOutlinePlus />} */}
-              </div>
+              <span>
+                {accActive? <BiChevronDown/>:<BiChevronRight className="text-lg"/>}
+              </span>
             </div>
           </div>
 
@@ -148,9 +150,9 @@ const Help = () => {
                   </AnimatePresence>
                 </div>
               </div>
-              <div className={`w-1/2 h-[1px] rotate-[90deg] bg-white basis-[5%] relative after:content-[''] after:absolute after:w-full after:h-[1px] after:bg-white after:rotate-[90deg]  ${accActive2? 'btn-ani after:opacity-0 after:rotate-[-180deg]  after:duration-300': 'btn-ani-anti'}`}>
-                {/* {accActive ? <AiOutlineMinus /> : <AiOutlinePlus />} */}
-              </div>
+              <span>
+                {accActive2? <BiChevronDown/>:<BiChevronRight className="text-lg"/>}
+              </span>
             </div>
           </div>
 
@@ -189,9 +191,9 @@ const Help = () => {
                   </AnimatePresence>
                 </div>
               </div>
-              <div className={`w-1/2 h-[1px] rotate-[90deg] bg-white basis-[5%] relative after:content-[''] after:absolute after:w-full after:h-[1px] after:bg-white after:rotate-[90deg] ${accActive3? 'btn-ani after:opacity-0 after:rotate-[-180deg] after:duration-300': 'btn-ani-anti'}`}>
-                {/* {accActive ? <AiOutlineMinus /> : <AiOutlinePlus />} */}
-              </div>
+              <span>
+                {accActive3? <BiChevronDown/>:<BiChevronRight className="text-lg"/>}
+              </span>
             </div>
           </div>
         </div>
@@ -200,13 +202,13 @@ const Help = () => {
           <div
             className={`${bg} absolute top-0 left-0 w-full h-full z-[-1] rotate-[6deg] rounded-xl`}
           ></div>
-          <img src={img} className="w-[40rem]" alt="" />
+          <img src={img} className="w-[22rem] md:w-[28rem] xl:w-[40rem]" alt="" />
         </div>
       </div>
 
-      <div className="h-[80vh] w-full bg-line-gradient mt-28 relative z-50 grid place-items-center">
+      <div className="h-[80vh] w-full bg-line-gradient mt-28 relative z-50 grid place-items-center px-[1rem] md:px-0">
         <div className="bg-overlay absolute top-0 left-0 w-full h-full z-[-1]"></div>
-        <div className=" w-[65%] bg-help py-14 px-12 flex justify-between items-start gap-6 rounded-lg">
+        <div className="md:w-[90%] lg:w-[80%] xl:w-[65%] bg-help py-14 px-12 flex flex-col md:flex-row justify-between items-start gap-6 rounded-lg">
           <div className="w-[7rem] h-[7rem] basis-[30%]">
             <img
               src={human}
@@ -215,7 +217,7 @@ const Help = () => {
             />
           </div>
           <div className="text-white">
-            <h1 className="text-[2rem] font-head font-[700] tracking-tighter leading-10">
+            <h1 className="text-[1.4rem] md:text-[1.5rem] lg:text-[1.75rem] xl:text-[2rem] font-head font-[700] tracking-tighter leading-10">
               “We really wanted a CMS that was the least developer dependent,
               and with Webflow, we’ve completely removed a step from our
               workflows and cut time-to-launch in half.”

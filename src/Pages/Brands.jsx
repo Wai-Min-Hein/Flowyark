@@ -13,40 +13,40 @@ import brand11 from "../../img/brand11.svg";
 
 const Brands = () => {
   return (
-    <div className="grid place-items-center my-10">
+    <div className="grid place-items-center mb-10 mt-[4rem] md:mt-0">
       <h1 className="te text-header-text text-2xl font-bold mb-10">The world's best companies trust Webflow</h1>
       <div className="flex flex-wrap justify-center items-center gap-5 gap-y-10">
-        <div className="basis-[13.33%]">
+        <div className="basis-[28%] sm:basis-[19%] md:basis-[13.33%]">
           <img src={brand1} className="w-[5rem]" alt="" />
         </div>
-        <div className="basis-[13.33%]">
+        <div className="basis-[28%] sm:basis-[19%] md:basis-[13.33%]">
           <img src={brand2} className="w-[5rem]" alt="" />
         </div>
-        <div className="basis-[13.33%]">
+        <div className="basis-[28%] sm:basis-[19%] md:basis-[13.33%]">
           <img src={brand3} className="w-[5rem]" alt="" />
         </div>
-        <div className="basis-[13.33%]">
+        <div className="basis-[28%] sm:basis-[19%] md:basis-[13.33%]">
           <img src={brand4} className="w-[5rem]" alt="" />
         </div>
-        <div className="basis-[13.33%]">
+        <div className="basis-[28%] sm:basis-[19%] md:basis-[13.33%]">
           <img src={brand5} className="w-[5rem]" alt="" />
         </div>
-        <div className="basis-[13.33%]">
+        <div className="basis-[28%] sm:basis-[19%] md:basis-[13.33%]">
           <img src={brand6} className="w-[5rem]" alt="" />
         </div>
-        <div className="basis-[13.33%]">
+        <div className="basis-[28%] sm:basis-[19%] md:basis-[13.33%]">
           <img src={brand7} className="w-[5rem]" alt="" />
         </div>
-        <div className="basis-[13.33%]">
+        <div className="basis-[28%] sm:basis-[19%] md:basis-[13.33%]">
           <img src={brand8} className="w-[5rem]" alt="" />
         </div>
-        <div className="basis-[13.33%]">
+        <div className="basis-[28%] sm:basis-[19%] md:basis-[13.33%]">
           <img src={brand9} className="w-[5rem]" alt="" />
         </div>
-        <div className="basis-[13.33%]">
+        <div className="basis-[28%] sm:basis-[19%] md:basis-[13.33%]">
           <img src={brand10} className="w-[5rem]" alt="" />
         </div>
-        <div className="basis-[13.33%]">
+        <div className="basis-[28%] sm:basis-[19%] md:basis-[13.33%]">
           <img src={brand11} className="w-[5rem]" alt="" />
         </div>
       </div>

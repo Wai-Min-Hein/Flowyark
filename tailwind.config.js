@@ -6,6 +6,8 @@ export default {
   ],
   theme: {
     screens: {
+      xsm: "480px",
+      // => @media (min-width: 640px) { ... }
       sm: "640px",
       // => @media (min-width: 640px) { ... }
 
@@ -29,6 +31,7 @@ export default {
         green: "#3aecba",
         blue: "#4036be",
         orange: "#a84b05",
+        red: "#e23b3b",
         bg: "#0d1117",
         "acc-bg": "#171e25",
         "acc-at-bg": "#222d3b",

@@ -7,7 +7,7 @@ import svg4 from "../../img/why4.svg";
 
 const Why = () => {
   return (
-    <div className="xl:container xl:mx-auto grid md:grid-cols-8 md:grid-rows-16 xsm:grid-cols-2 xsm:grid-row-3 grid-col-1 grid-row-5 min-h-[155vh] pb-16 pl-[1rem] md:pl-[3rem] xl:pl-0 mt-[7rem] xsm:mt-0 gap-6 md:gap-0">
+    <div className="xl:container xl:mx-auto grid md:grid-cols-8 md:grid-rows-16 xsm:grid-cols-2 xsm:grid-row-3 grid-col-1 grid-row-5 min-h-[155vh] pb-16 pl-[1rem] md:pl-[3rem] xl:pl-0 mt-[7rem] xsm:mt-0  gap-x-6">
       <div className="md:row-start-1 md:row-end-6 md:col-start-1 xl:col-start-2 md:col-span-3 xsm:row-start-1 xsm:row-end-2 xsm:col-start-1 xsm:col-span-full w-full">
         <p className="text-[11px] tracking-wide font-[600] uppercase">
           <span className=" opacity-50 pr-1">02 </span> .Why web flow
@@ -18,11 +18,11 @@ const Why = () => {
               <img src={helpIcon} className="w-[1.75rem]" alt="" />
             </div>
           </div>
-          <div className="">
-            <h1 className="font-head text-[2.2rem] xsm:text-[2.5rem] xl:text-[3.25rem] font-[700] tracking-tight w-full xsm:w-4/5 xl:w-full leading-[2.75rem] xl:leading-[3.75rem]">
-              Trust the <br /> power of no- <br /> code.
+          <div className="basis-full">
+            <h1 className="font-head text-[2.2rem] xsm:text-[2.5rem] xl:text-[3.25rem] font-[700] tracking-tight w-full lg:w-3/5 leading-[2.75rem] xl:leading-[3.75rem]">
+              Trust the  power of no- code.
             </h1>
-            <p className="font-para mt-3 w-[20rem] lg:w-[35rem] text-[1.35rem]">
+            <p className="font-para mt-3 w-[28rem] lg:w-[35rem] text-[1.35rem]">
               Launch new campaigns faster, <br /> optimize your website on the
               fly, and <br />
               connect it to your key tools with the <br /> best no-code solution
@@ -31,12 +31,12 @@ const Why = () => {
           </div>
         </div>
       </div>
-      <div className="md:col-start-6 md:col-span-3 md:row-start-4 md:row-end-[8]  xsm:row-start-2 xsm:row-end-3 xsm:col-start-1 xsm:col-end-2 flex flex-col md:flex-row md:items-center md:justify-center justify-between items-start  gap-4 b md:border-l-2 md:border-b-2 md:rounded-bl-[4rem] border-acc-bg px-6">
-        <div className="  md:basis-1/2  relative rounded-lg flex-1">
+      <div className="md:col-start-6 md:col-span-3 md:row-start-4 md:row-end-[8]  xsm:row-start-2 xsm:row-end-3 xsm:col-start-1 xsm:col-end-2 flex flex-col md:flex-row md:items-center md:justify-center justify-start items-start  gap-4 b md:border-l-2 md:border-b-2 md:rounded-bl-[4rem] border-acc-bg px-6">
+        <div className="  md:basis-1/2  relative rounded-lg">
           <span className="bg-acc-bg w-8 h-8 absolute rounded-full top-[-.5rem] left-[-.8rem] grid place-items-center">
             1
           </span>
-          <img src={svg} className="h-full" alt="" />
+          <img src={svg} className="" alt="" />
         </div>
         <div className=" md:basis-1/2 rounded-lg">
           <h1>Scale</h1>

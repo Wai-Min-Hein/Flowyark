@@ -6,10 +6,10 @@ import whatSay from "../../img/whatSay.jpeg";
 const WhatSay = () => {
   return (
     <div className=" xl:container xl:mx-auto my-24">
-      <div className="bg-acc-at-bg min-h-[90vh] w-[90%] py-6 mx-auto flex flex-col lg:flex-row justify-between items-center rounded-lg">
+      <div className="bg-acc-at-bg min-h-[90vh] w-[90%] mx-auto flex flex-col lg:flex-row justify-between items-center rounded-lg">
         
         <div className="h-full w-full basis-[50%] overflow-hidden">
-          <img src={whatSay} className="contain w-full" alt="" />
+          <img src={whatSay} className="object-contain w-full" alt="" />
         </div>
 
         <div className=" basis-[45%] px-10">

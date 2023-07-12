@@ -10,6 +10,7 @@ import WhatSay from './Pages/WhatSay'
 import Pricing from './Pages/Pricing'
 import Popular from './Pages/Popular'
 import FAQ from './Pages/FAQ'
+import Footer from './Pages/Footer'
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
       <Pricing/>
       <Popular/>
       <FAQ/>
+      <Footer/>
       
     </div>
   )

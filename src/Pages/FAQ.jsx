@@ -11,7 +11,7 @@ import bgShape from '../../img/bg-shape.png'
 
 const FAQ = () => {
   return (
-    <div className="relative z-50 py-28 mt-16 overflow-hidden">
+    <div className="relative z-50 pt-28 pb-12 mt-16 overflow-hidden">
       <div className="text-center ">
         <p className="text-[11px] tracking-wide font-[600] uppercase">
           <span className=" opacity-50 pr-1">07 </span> .NOT READY YET?
@@ -249,11 +249,11 @@ const FAQ = () => {
       </div>
 
       <div
-      className={`bg-primary xl:container xl:mx-auto w-full lg:w-2/3 rounded-2xl text-center px-[1rem] lg:px-[3rem] xl:px-[10rem] py-[2rem] xl:py-[4rem] relative translate-y-[-80px]`}>
+      className={`bg-primary xl:container xl:mx-auto w-full  rounded-2xl text-center px-[1rem] lg:px-[3rem] xl:px-[10rem] py-[2rem] xl:py-[4rem] relative translate-y-[-80px]`}>
         <div className="">
           <img src={bgShape} className="absolute top-0 left-0 w-full h-full h- object-cover z-[-1]" alt="" />
         </div>
-        <h1 className="text-xl lg:text-5xl  font-head font-semibold text-white tracking-tighter">Move even faster with <span className="px-4 py-2 rounded-full bg-bg text-white text-lg xl:text-2xl font-bold  leading-[2.5] h-full">flowyak</span> and a new Webflow website.</h1>
+        <h1 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl px-[2rem] md:px-[3rem] lg:px-[4rem]  font-head font-semibold text-white tracking-tighter">Move even faster with <span className="px-4 py-2 rounded-full bg-bg text-white text-lg xl:text-2xl font-bold  leading-[2.5] h-full">flowyak</span> and a new Webflow website.</h1>
         <button className="bg-[#1335a7] xl:px-8 xl:py-4 px-6 py-3 inline-block text-white font-[600] font-head text-xl xl:text-2xl rounded-full mt-10 btn">
           <div className="flex flex-col">
             <div className="btn1">Work with us</div>
